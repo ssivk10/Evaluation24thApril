@@ -27,7 +27,8 @@ public class Question2DescFreq {
 		while (i < n) {
 			if (!Arrays.toString(b).contains(a[i] + "")) {
 				int x = hm.get(a[i]);
-				while (x >= 0) {
+				while (x > 0) {
+					System.out.println(" -");
 					b[k++] = a[i];
 					x--;
 				}
